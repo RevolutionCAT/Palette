@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://c3sxd13n7e6nc"]
+
+[ext_resource type="Script" uid="uid://cdo0pci3l6qrt" path="res://scripts/locations/game/life/Pause.gd" id="1_3kqv4"]
+[ext_resource type="Texture2D" uid="uid://d3wnuxvl8uabn" path="res://assets/images/gray.png" id="1_ios7x"]
+
+[node name="Pause" type="CanvasLayer" unique_id=133123307]
+process_mode = 3
+script = ExtResource("1_3kqv4")
+
+[node name="WindowBackground" type="TextureRect" parent="." unique_id=68058263]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 750.0
+offset_top = -455.0
+offset_right = -682.0
+offset_bottom = 453.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ios7x")
+
+[node name="ContinueButton" type="TextureButton" parent="." unique_id=2093725001]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="ContinueButton" unique_id=315220813]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CONTINUE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsButton" type="TextureButton" parent="." unique_id=2028222620]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="SettingsButton" unique_id=83744661]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SETTINGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitButton" type="TextureButton" parent="." unique_id=320128915]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="ExitButton" unique_id=1805678603]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "EXIT"
+horizontal_alignment = 1
+vertical_alignment = 1

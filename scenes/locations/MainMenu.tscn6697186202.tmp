@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://d27ckvmw78ict"]
+
+[ext_resource type="Script" uid="uid://bvpunnah2pmed" path="res://scripts/locations/MainMenu.gd" id="1_uidrf"]
+[ext_resource type="Texture2D" uid="uid://d3wnuxvl8uabn" path="res://assets/images/gray.png" id="2_40ump"]
+
+[node name="MainMenu" type="Control" unique_id=31990753]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uidrf")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1362389465]
+layout_mode = 0
+texture = ExtResource("2_40ump")
+
+[node name="PlayButton" type="TextureButton" parent="." unique_id=2024727012]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 500.0
+offset_right = 508.0
+offset_bottom = 508.0
+
+[node name="SettingsButton" type="TextureButton" parent="." unique_id=244122183]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 500.0
+offset_right = 508.0
+offset_bottom = 508.0
+
+[node name="ExitButton" type="TextureButton" parent="." unique_id=291282731]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 500.0
+offset_right = 508.0
+offset_bottom = 508.0
+
+[node name="TitleLabel" type="Control" parent="." unique_id=220126933]
+anchors_preset = 0

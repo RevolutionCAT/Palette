@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b6a4jglc3w3ej"]
+
+[ext_resource type="Script" uid="uid://ddo5tibynpv84" path="res://scripts/locations/game/life/entities/Player.gd" id="1_b5v3v"]
+[ext_resource type="Texture2D" uid="uid://swux4v6s4hf4" path="res://assets/images/who.png" id="2_haj50"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_haj50"]
+size = Vector2(112, 109)
+
+[node name="Player" type="CharacterBody2D" unique_id=841039791 groups=["player"]]
+process_mode = 1
+script = ExtResource("1_b5v3v")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1132995098]
+position = Vector2(3.9999943, -0.5000037)
+scale = Vector2(1.6599998, 2.1699998)
+texture = ExtResource("2_haj50")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1760332865]
+position = Vector2(1, 3.5)
+shape = SubResource("RectangleShape2D_haj50")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=857141570]

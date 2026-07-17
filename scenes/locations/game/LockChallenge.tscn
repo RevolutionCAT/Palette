@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://v7lkiq5lo5rs"]
+
+[ext_resource type="Script" uid="uid://cokc1ec2qvwh7" path="res://scripts/locations/game/lock/LockChallenge.gd" id="1_vlmxy"]
+[ext_resource type="Texture2D" uid="uid://3x2qydiqdd42" path="res://assets/images/menu.png" id="2_bkj6d"]
+[ext_resource type="Script" uid="uid://d01vlkvl6mt87" path="res://scripts/locations/game/lock/Effects.gd" id="3_iw7a2"]
+
+[node name="LockChallenge" type="Control" unique_id=1410121403]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vlmxy")
+
+[node name="Background" type="TextureRect" parent="." unique_id=501312476]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bkj6d")
+
+[node name="Timer" type="Timer" parent="." unique_id=1054005082]
+
+[node name="TaskManager" type="Node" parent="." unique_id=841097383]
+
+[node name="Tasks" type="Node" parent="." unique_id=1839760546]
+
+[node name="CoordinateGame" type="Control" parent="Tasks" unique_id=1839069242]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FindGame" type="Control" parent="Tasks" unique_id=341186668]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="OtherLittleTasks" type="Control" parent="Tasks" unique_id=829165218]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ThoughtGameWindow" type="Control" parent="Tasks" unique_id=1252546836]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ThoughtGame" type="SubViewport" parent="Tasks/ThoughtGameWindow" unique_id=1887285042]
+
+[node name="ThoughtGameNode" type="Node2D" parent="Tasks/ThoughtGameWindow/ThoughtGame" unique_id=135220401]
+
+[node name="Effects" type="CanvasLayer" parent="." unique_id=1294725008]
+script = ExtResource("3_iw7a2")
+
+[node name="Glitch" type="ColorRect" parent="Effects" unique_id=758764063]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Overlay" type="ColorRect" parent="Effects" unique_id=1099700154]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1205059112]

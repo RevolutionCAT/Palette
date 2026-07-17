@@ -1,0 +1,675 @@
+[gd_scene format=3 uid="uid://c0risaiexra70"]
+
+[ext_resource type="Script" uid="uid://t487lst7wbky" path="res://scripts/locations/game/life/Life.gd" id="1_bg1mm"]
+[ext_resource type="Texture2D" uid="uid://cvd4ejc4pmo1u" path="res://assets/images/map_layout.png" id="2_f8pwm"]
+[ext_resource type="Texture2D" uid="uid://igdjrnt8ckcm" path="res://assets/images/pit.png" id="3_6heob"]
+[ext_resource type="Texture2D" uid="uid://cehu3hr6x7vup" path="res://assets/images/tree.png" id="4_56aj6"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_f8pwm"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6heob"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w5am3"]
+size = Vector2(66.5, 596.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dvsj7"]
+size = Vector2(44, 688)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ob043"]
+size = Vector2(3508, 57)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xjtqq"]
+size = Vector2(1194, 46.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chpuy"]
+size = Vector2(1381, 46.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_un33f"]
+size = Vector2(64, 596.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1u7em"]
+size = Vector2(46, 735)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gd8vq"]
+size = Vector2(46, 412.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k4lyd"]
+size = Vector2(46, 689)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uhfh6"]
+size = Vector2(46, 2157.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1uhqw"]
+size = Vector2(847, 49)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_56aj6"]
+size = Vector2(1468, 46)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2xl54"]
+size = Vector2(305, 45.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aunr6"]
+size = Vector2(2771, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_428vf"]
+size = Vector2(65, 2110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_idllw"]
+size = Vector2(9.5, 1785)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vt8e"]
+size = Vector2(10, 1784.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbsxv"]
+size = Vector2(1926, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yu33x"]
+size = Vector2(14.25, 201)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2jej8"]
+size = Vector2(11, 200.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y8fc8"]
+size = Vector2(253, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o7g2u"]
+size = Vector2(827.25, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hb3vs"]
+size = Vector2(689, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qmffd"]
+size = Vector2(138.5, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ufnpv"]
+size = Vector2(32, 276)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q361u"]
+size = Vector2(32, 426)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_klyop"]
+size = Vector2(917, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bv16i"]
+size = Vector2(918.5, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_87q71"]
+size = Vector2(30, 747)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_otww8"]
+size = Vector2(919, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbg4l"]
+size = Vector2(919, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qm5s7"]
+size = Vector2(28, 973)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xaxgk"]
+size = Vector2(432, 146)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_32tmi"]
+size = Vector2(236, 146)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ri7c"]
+size = Vector2(227, 840.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6heob"]
+size = Vector2(904, 310.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f8pwm"]
+size = Vector2(311, 320)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mpmoh"]
+size = Vector2(210.5, 356)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jghhv"]
+size = Vector2(229, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lv87c"]
+size = Vector2(361, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jp3b7"]
+size = Vector2(550, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qir1a"]
+size = Vector2(46, 321.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_unv3l"]
+size = Vector2(46, 321.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x20i8"]
+size = Vector2(46, 229)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cg6ed"]
+size = Vector2(672.625, 356)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rnbvg"]
+size = Vector2(602, 298)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mneov"]
+size = Vector2(1927, 1790)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pehes"]
+size = Vector2(917, 686)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryaq2"]
+size = Vector2(918, 917)
+
+[node name="Life" type="Node2D" unique_id=1538742612]
+script = ExtResource("1_bg1mm")
+
+[node name="World" type="Node2D" parent="." unique_id=1392883116]
+y_sort_enabled = true
+
+[node name="MapSprite" type="Sprite2D" parent="World" unique_id=666061084]
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_f8pwm")
+
+[node name="Objects" type="Node2D" parent="World" unique_id=1885115100]
+
+[node name="Walls" type="Node2D" parent="World/Objects" unique_id=1959652284]
+
+[node name="Hall" type="Node2D" parent="World/Objects/Walls" unique_id=1294058988]
+
+[node name="Collisions" type="Node2D" parent="World/Objects/Walls/Hall" unique_id=1887273886]
+
+[node name="BottomRight" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=1024205703]
+physics_material_override = SubResource("PhysicsMaterial_f8pwm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/BottomRight" unique_id=2019845962]
+material = SubResource("CanvasItemMaterial_6heob")
+position = Vector2(2255.75, 1420.75)
+shape = SubResource("RectangleShape2D_w5am3")
+
+[node name="MiddleLeft" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=122512576]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/MiddleLeft" unique_id=1804515076]
+position = Vector2(-1197, 1374)
+shape = SubResource("RectangleShape2D_dvsj7")
+
+[node name="TopUp" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=957373800]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/TopUp" unique_id=2088351482]
+position = Vector2(534, -1706.5)
+shape = SubResource("RectangleShape2D_ob043")
+
+[node name="TopDown" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=1193233068]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/TopDown" unique_id=402516221]
+position = Vector2(65, -1059.25)
+shape = SubResource("RectangleShape2D_xjtqq")
+
+[node name="TopDown2" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=91045523]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/TopDown2" unique_id=560414626]
+position = Vector2(1581.5, -1059)
+shape = SubResource("RectangleShape2D_chpuy")
+
+[node name="TopRight" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=2126519282]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/TopRight" unique_id=996320425]
+position = Vector2(2256, -1380.125)
+shape = SubResource("RectangleShape2D_un33f")
+
+[node name="MiddleLeft2" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=1534817931]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/MiddleLeft2" unique_id=443222888]
+position = Vector2(-1197, 341.5)
+shape = SubResource("RectangleShape2D_1u7em")
+
+[node name="MiddleLeft3" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=942036853]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/MiddleLeft3" unique_id=522021369]
+position = Vector2(-1197, -553.375)
+shape = SubResource("RectangleShape2D_gd8vq")
+
+[node name="MiddleLeft4" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=1166676297]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/MiddleLeft4" unique_id=1234103596]
+position = Vector2(-1197, -1333.5)
+shape = SubResource("RectangleShape2D_k4lyd")
+
+[node name="MiddleRight" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=186700460]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/MiddleRight" unique_id=1682922270]
+position = Vector2(-554, -3.25)
+shape = SubResource("RectangleShape2D_uhfh6")
+
+[node name="BottomUp" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=1178837831]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/BottomUp" unique_id=679699243]
+position = Vector2(1865.5, 1098.5)
+shape = SubResource("RectangleShape2D_1uhqw")
+
+[node name="BottomUp2" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=1247434568]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/BottomUp2" unique_id=996843144]
+position = Vector2(157, 1098)
+shape = SubResource("RectangleShape2D_56aj6")
+
+[node name="BottomDown" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=1048774060]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/BottomDown" unique_id=1545804741]
+position = Vector2(2069.5, 1741.75)
+shape = SubResource("RectangleShape2D_2xl54")
+
+[node name="BottomDown2" type="StaticBody2D" parent="World/Objects/Walls/Hall/Collisions" unique_id=984350578]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Hall/Collisions/BottomDown2" unique_id=1420280421]
+position = Vector2(170.5, 1741)
+shape = SubResource("RectangleShape2D_aunr6")
+
+[node name="Sprites" type="Node2D" parent="World/Objects/Walls/Hall" unique_id=80256167]
+
+[node name="Field" type="Node2D" parent="World/Objects/Walls" unique_id=1526877761]
+
+[node name="Collisions" type="Node2D" parent="World/Objects/Walls/Field" unique_id=931076734]
+
+[node name="Wall" type="StaticBody2D" parent="World/Objects/Walls/Field/Collisions" unique_id=450338490]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Field/Collisions/Wall" unique_id=501565422]
+position = Vector2(2024.5, 19)
+shape = SubResource("RectangleShape2D_428vf")
+
+[node name="Right" type="StaticBody2D" parent="World/Objects/Walls/Field/Collisions" unique_id=828989787]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Field/Collisions/Right" unique_id=1400622157]
+position = Vector2(1758.75, -143.5)
+shape = SubResource("RectangleShape2D_idllw")
+
+[node name="Left" type="StaticBody2D" parent="World/Objects/Walls/Field/Collisions" unique_id=1810785212]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Field/Collisions/Left" unique_id=1591897528]
+position = Vector2(-158, -143.25)
+shape = SubResource("RectangleShape2D_1vt8e")
+
+[node name="Bottom" type="StaticBody2D" parent="World/Objects/Walls/Field/Collisions" unique_id=199015193]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Field/Collisions/Bottom" unique_id=12867321]
+position = Vector2(800, 752.5)
+shape = SubResource("RectangleShape2D_qbsxv")
+
+[node name="KingPlace" type="StaticBody2D" parent="World/Objects/Walls/Field/Collisions" unique_id=1144770757]
+
+[node name="Left" type="CollisionShape2D" parent="World/Objects/Walls/Field/Collisions/KingPlace" unique_id=127771519]
+position = Vector2(654.875, -935.5)
+shape = SubResource("RectangleShape2D_yu33x")
+
+[node name="Right" type="CollisionShape2D" parent="World/Objects/Walls/Field/Collisions/KingPlace" unique_id=2038047880]
+position = Vector2(896.5, -936.25)
+shape = SubResource("RectangleShape2D_2jej8")
+
+[node name="Bottom" type="CollisionShape2D" parent="World/Objects/Walls/Field/Collisions/KingPlace" unique_id=891605724]
+position = Vector2(774.5, -830)
+shape = SubResource("RectangleShape2D_y8fc8")
+
+[node name="Sprites" type="Node2D" parent="World/Objects/Walls/Field" unique_id=787086221]
+
+[node name="Rooms" type="Node2D" parent="World/Objects/Walls" unique_id=1395284299]
+
+[node name="RoomTop" type="Node2D" parent="World/Objects/Walls/Rooms" unique_id=1094829837]
+
+[node name="Collisions" type="Node2D" parent="World/Objects/Walls/Rooms/RoomTop" unique_id=133338042]
+
+[node name="Bottom" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions" unique_id=663402963]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions/Bottom" unique_id=1808224272]
+position = Vector2(-1633.625, -654)
+shape = SubResource("RectangleShape2D_o7g2u")
+
+[node name="Top" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions" unique_id=506932597]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions/Top" unique_id=1596467055]
+position = Vector2(-1564.5, -1326)
+shape = SubResource("RectangleShape2D_hb3vs")
+
+[node name="Top2" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions" unique_id=430179816]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions/Top2" unique_id=631081814]
+position = Vector2(-1977.75, -1050)
+shape = SubResource("RectangleShape2D_qmffd")
+
+[node name="Left" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions" unique_id=295761937]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions/Left" unique_id=694056488]
+position = Vector2(-1925, -1203)
+shape = SubResource("RectangleShape2D_ufnpv")
+
+[node name="Left2" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions" unique_id=1580650717]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomTop/Collisions/Left2" unique_id=969962688]
+position = Vector2(-2063, -852)
+shape = SubResource("RectangleShape2D_q361u")
+
+[node name="Sprites" type="Node2D" parent="World/Objects/Walls/Rooms/RoomTop" unique_id=1837342791]
+
+[node name="RoomMiddle" type="Node2D" parent="World/Objects/Walls/Rooms" unique_id=1110667356]
+
+[node name="Collisions" type="Node2D" parent="World/Objects/Walls/Rooms/RoomMiddle" unique_id=242552333]
+
+[node name="Top" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomMiddle/Collisions" unique_id=961389278]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomMiddle/Collisions/Top" unique_id=1801446885]
+position = Vector2(-1678.5, -591)
+shape = SubResource("RectangleShape2D_klyop")
+
+[node name="Bottom" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomMiddle/Collisions" unique_id=1100445088]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomMiddle/Collisions/Bottom" unique_id=806435194]
+position = Vector2(-1678.75, 126)
+shape = SubResource("RectangleShape2D_bv16i")
+
+[node name="Left" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomMiddle/Collisions" unique_id=2141964593]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomMiddle/Collisions/Left" unique_id=702929954]
+position = Vector2(-2152, -232.5)
+shape = SubResource("RectangleShape2D_87q71")
+
+[node name="Sprites" type="Node2D" parent="World/Objects/Walls/Rooms/RoomMiddle" unique_id=1146368608]
+
+[node name="RoomBottom" type="Node2D" parent="World/Objects/Walls/Rooms" unique_id=775771916]
+
+[node name="Collisions" type="Node2D" parent="World/Objects/Walls/Rooms/RoomBottom" unique_id=731664963]
+
+[node name="Top" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomBottom/Collisions" unique_id=378115549]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomBottom/Collisions/Top" unique_id=1777447583]
+position = Vector2(-1679.5, 374)
+shape = SubResource("RectangleShape2D_otww8")
+
+[node name="Bottom" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomBottom/Collisions" unique_id=1893553598]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomBottom/Collisions/Bottom" unique_id=1704778223]
+position = Vector2(-1678, 1319)
+shape = SubResource("RectangleShape2D_lbg4l")
+
+[node name="Left" type="StaticBody2D" parent="World/Objects/Walls/Rooms/RoomBottom/Collisions" unique_id=1760285449]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Walls/Rooms/RoomBottom/Collisions/Left" unique_id=124341887]
+position = Vector2(-2151, 846.5)
+shape = SubResource("RectangleShape2D_qm5s7")
+
+[node name="Sprites" type="Node2D" parent="World/Objects/Walls/Rooms/RoomBottom" unique_id=32768791]
+
+[node name="Special" type="Node2D" parent="World/Objects" unique_id=630091485]
+
+[node name="Windows" type="Node2D" parent="World/Objects/Special" unique_id=858112843]
+
+[node name="Hall" type="Node2D" parent="World/Objects/Special/Windows" unique_id=730445294]
+
+[node name="Top" type="Area2D" parent="World/Objects/Special/Windows/Hall" unique_id=1726013432]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Windows/Hall/Top" unique_id=807520652]
+position = Vector2(280, -1107)
+shape = SubResource("RectangleShape2D_xaxgk")
+debug_color = Color(0.68954694, 0.49223667, 0.22722542, 0.41960785)
+
+[node name="Top2" type="Area2D" parent="World/Objects/Special/Windows/Hall" unique_id=664176691]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Windows/Hall/Top2" unique_id=924603160]
+position = Vector2(1175, -1107)
+shape = SubResource("RectangleShape2D_32tmi")
+debug_color = Color(0.68954694, 0.49223667, 0.22722542, 0.41960785)
+
+[node name="Middle" type="Area2D" parent="World/Objects/Special/Windows/Hall" unique_id=1366193122]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Windows/Hall/Middle" unique_id=736105136]
+position = Vector2(-643.5, 504.875)
+shape = SubResource("RectangleShape2D_3ri7c")
+debug_color = Color(0.68954694, 0.49223667, 0.22722542, 0.41960785)
+
+[node name="Bottom" type="Area2D" parent="World/Objects/Special/Windows/Hall" unique_id=1970971502]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Windows/Hall/Bottom" unique_id=88713821]
+position = Vector2(440, 1230.75)
+shape = SubResource("RectangleShape2D_6heob")
+debug_color = Color(0.68954694, 0.49223667, 0.22722542, 0.41960785)
+
+[node name="Bottom2" type="Area2D" parent="World/Objects/Special/Windows/Hall" unique_id=1948068102]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Windows/Hall/Bottom2" unique_id=1826672851]
+position = Vector2(1597.5, 1235)
+shape = SubResource("RectangleShape2D_f8pwm")
+debug_color = Color(0.68954694, 0.49223667, 0.22722542, 0.41960785)
+
+[node name="Rooms" type="Node2D" parent="World/Objects/Special/Windows" unique_id=1100648575]
+
+[node name="LittleWorld" type="Area2D" parent="World/Objects/Special/Windows/Rooms" unique_id=1519591853]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Windows/Rooms/LittleWorld" unique_id=98456997]
+position = Vector2(-2058.25, 1069)
+shape = SubResource("RectangleShape2D_mpmoh")
+debug_color = Color(0.24911386, 0.6358826, 0, 0.41960785)
+
+[node name="Doors" type="Node2D" parent="World/Objects/Special" unique_id=245592673]
+
+[node name="Hall" type="Node2D" parent="World/Objects/Special/Doors" unique_id=1076093819]
+
+[node name="ToFieldTop" type="StaticBody2D" parent="World/Objects/Special/Doors/Hall" unique_id=1706622907]
+collision_layer = 2
+collision_mask = 2
+metadata/Locked = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Doors/Hall/ToFieldTop" unique_id=1036693979]
+position = Vector2(776.5, -1059)
+shape = SubResource("RectangleShape2D_jghhv")
+debug_color = Color(0.28868642, 0.6158019, 0.3916554, 0.41960785)
+
+[node name="ToOutside" type="StaticBody2D" parent="World/Objects/Special/Doors/Hall" unique_id=1879795485]
+collision_layer = 2
+collision_mask = 2
+metadata/Locked = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Doors/Hall/ToOutside" unique_id=1432944884]
+position = Vector2(1736.5, 1741)
+shape = SubResource("RectangleShape2D_lv87c")
+debug_color = Color(0.28868642, 0.6158019, 0.3916554, 0.41960785)
+
+[node name="ToFieldBottom" type="StaticBody2D" parent="World/Objects/Special/Doors/Hall" unique_id=1167114974]
+collision_layer = 2
+collision_mask = 2
+metadata/Locked = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Doors/Hall/ToFieldBottom" unique_id=1394924867]
+position = Vector2(1167, 1100)
+shape = SubResource("RectangleShape2D_jp3b7")
+debug_color = Color(0.28868642, 0.6158019, 0.3916554, 0.41960785)
+
+[node name="ToRoomBottom" type="StaticBody2D" parent="World/Objects/Special/Doors/Hall" unique_id=1684604199]
+collision_layer = 2
+collision_mask = 2
+metadata/Locked = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Doors/Hall/ToRoomBottom" unique_id=361701003]
+position = Vector2(-1197, 869.25)
+shape = SubResource("RectangleShape2D_qir1a")
+debug_color = Color(0.28868642, 0.6158019, 0.3916554, 0.41960785)
+
+[node name="ToRoomMiddle" type="StaticBody2D" parent="World/Objects/Special/Doors/Hall" unique_id=1757555679]
+collision_layer = 2
+collision_mask = 2
+metadata/Locked = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Doors/Hall/ToRoomMiddle" unique_id=350992327]
+position = Vector2(-1197, -186)
+shape = SubResource("RectangleShape2D_unv3l")
+debug_color = Color(0.28868642, 0.6158019, 0.3916554, 0.41960785)
+
+[node name="ToRoomTop" type="StaticBody2D" parent="World/Objects/Special/Doors/Hall" unique_id=297748097]
+collision_layer = 2
+collision_mask = 2
+metadata/Locked = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Doors/Hall/ToRoomTop" unique_id=1851409443]
+position = Vector2(-1197, -874.5)
+shape = SubResource("RectangleShape2D_x20i8")
+debug_color = Color(0.28868642, 0.6158019, 0.3916554, 0.41960785)
+
+[node name="Objects" type="Node2D" parent="World/Objects/Special" unique_id=1680653748]
+
+[node name="Rooms" type="Node2D" parent="World/Objects/Special/Objects" unique_id=1394838942]
+
+[node name="Bed" type="StaticBody2D" parent="World/Objects/Special/Objects/Rooms" unique_id=885610206]
+
+[node name="Area" type="Area2D" parent="World/Objects/Special/Objects/Rooms/Bed" unique_id=1576673261]
+position = Vector2(-1786.75, 586)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Objects/Rooms/Bed/Area" unique_id=1279952674]
+position = Vector2(-15.5625, -20)
+shape = SubResource("RectangleShape2D_cg6ed")
+debug_color = Color(0, 0.6199811, 0.5686258, 0.41960785)
+
+[node name="Collidable" type="CollisionShape2D" parent="World/Objects/Special/Objects/Rooms/Bed" unique_id=1230956201]
+position = Vector2(-1836, 537)
+shape = SubResource("RectangleShape2D_rnbvg")
+
+[node name="TextureRect" type="TextureRect" parent="World/Objects/Special/Objects/Rooms/Bed" unique_id=1689358672]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2138.0
+offset_top = 387.0
+offset_right = -1535.0
+offset_bottom = 686.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_6heob")
+
+[node name="Hall" type="Node2D" parent="World/Objects/Special/Objects" unique_id=1865702612]
+
+[node name="Lever" type="StaticBody2D" parent="World/Objects/Special/Objects/Hall" unique_id=677173449]
+
+[node name="Area2D" type="Area2D" parent="World/Objects/Special/Objects/Hall/Lever" unique_id=1423987863]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Objects/Hall/Lever/Area2D" unique_id=1041940345]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Objects/Special/Objects/Hall/Lever" unique_id=289292202]
+
+[node name="TextureRect" type="TextureRect" parent="World/Objects/Special/Objects/Hall/Lever" unique_id=1655705276]
+offset_left = -578.0
+offset_top = 957.0
+offset_right = -459.05695
+offset_bottom = 1015.7627
+rotation = 1.5707964
+texture = ExtResource("4_56aj6")
+
+[node name="Zones" type="Node2D" parent="World" unique_id=933082397]
+
+[node name="Field" type="Area2D" parent="World/Zones" unique_id=636289350]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Zones/Field" unique_id=1636157925]
+visible = false
+position = Vector2(799.5, -141)
+shape = SubResource("RectangleShape2D_mneov")
+debug_color = Color(0.07749642, 0.07172366, 0.06746343, 0.41960785)
+
+[node name="BelowField" type="Area2D" parent="World/Zones" unique_id=1718993314]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="World/Zones/BelowField" unique_id=1845747849]
+polygon = PackedVector2Array(-531, -1036, -164, -1036, -164, 755, 1764, 756, 1764, -1036, 1992, -1036, 1993, 1075, -531, 1075)
+
+[node name="Dimming" type="ColorRect" parent="World/Zones/BelowField/CollisionShape2D" unique_id=1360692708]
+visible = false
+offset_left = -531.0
+offset_top = -1036.0
+offset_right = 1992.0
+offset_bottom = 1074.0
+color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="Hall" type="Area2D" parent="World/Zones" unique_id=10296469]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="World/Zones/Hall" unique_id=1244605946]
+polygon = PackedVector2Array(2222, 1123, 2222, 1719, -1175, 1717, -1174, -1679, 2224, -1678, 2224, -1082, -578, -1083, -577, 1121)
+
+[node name="Dimming" type="ColorRect" parent="World/Zones/Hall/CollisionShape2D" unique_id=1955293600]
+visible = false
+offset_left = -1174.0
+offset_top = -1679.0
+offset_right = 2224.0
+offset_bottom = -1082.0
+color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="Dimming2" type="ColorRect" parent="World/Zones/Hall/CollisionShape2D" unique_id=1185461712]
+visible = false
+offset_left = -1175.0
+offset_top = -1082.0
+offset_right = -566.0
+offset_bottom = 1121.0
+color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="Dimming3" type="ColorRect" parent="World/Zones/Hall/CollisionShape2D" unique_id=294486989]
+visible = false
+offset_left = -1175.0
+offset_top = 1121.0
+offset_right = 2223.0
+offset_bottom = 1719.0
+color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="Rooms" type="Area2D" parent="World/Zones" unique_id=403368883]
+
+[node name="RoomTop" type="CollisionPolygon2D" parent="World/Zones/Rooms" unique_id=160321513]
+polygon = PackedVector2Array(-1909, -1309, -1220, -1311, -1222, -671, -2046, -669, -2046, -1034, -1907, -1034)
+
+[node name="Dimming" type="ColorRect" parent="World/Zones/Rooms/RoomTop" unique_id=530804598]
+visible = false
+offset_left = -1909.0
+offset_top = -1311.0
+offset_right = -1220.0
+offset_bottom = -669.0
+color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="Dimming2" type="ColorRect" parent="World/Zones/Rooms/RoomTop" unique_id=1793321914]
+visible = false
+offset_left = -2047.0
+offset_top = -1035.0
+offset_right = -1909.0
+offset_bottom = -669.0
+color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="RoomMiddle" type="CollisionShape2D" parent="World/Zones/Rooms" unique_id=405137815]
+position = Vector2(-1678.5, -232)
+shape = SubResource("RectangleShape2D_pehes")
+debug_color = Color(0.9992011, 0, 0.13388425, 0.41960785)
+
+[node name="Dimming" type="ColorRect" parent="World/Zones/Rooms/RoomMiddle" unique_id=893399134]
+visible = false
+offset_left = -459.5
+offset_top = -344.0
+offset_right = 458.5
+offset_bottom = 343.0
+color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="RoomBottom" type="CollisionShape2D" parent="World/Zones/Rooms" unique_id=1396537988]
+position = Vector2(-1678, 846.5)
+shape = SubResource("RectangleShape2D_ryaq2")
+debug_color = Color(0.99807936, 0, 0.16187695, 0.41960785)
+
+[node name="Dimming" type="ColorRect" parent="World/Zones/Rooms/RoomBottom" unique_id=1895666876]
+visible = false
+offset_left = -459.0
+offset_top = -459.5
+offset_right = 458.0
+offset_bottom = 459.5
+color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="Entities" type="Node2D" parent="." unique_id=571754643]
+y_sort_enabled = true
+
+[node name="Player" type="CharacterBody2D" parent="Entities" unique_id=1203910781]
+
+[node name="Characters" type="Node2D" parent="Entities" unique_id=124051328]
+
+[node name="HUD_Interface" type="CanvasLayer" parent="." unique_id=66728255]

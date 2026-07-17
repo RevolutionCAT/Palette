@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://d27ckvmw78ict"]
+
+[ext_resource type="Script" uid="uid://bvpunnah2pmed" path="res://scripts/locations/technical/MainMenu.gd" id="1_4582y"]
+[ext_resource type="Texture2D" uid="uid://djjpnxui3anl4" path="res://assets/images/main_menu.png" id="2_4582y"]
+[ext_resource type="Texture2D" uid="uid://d3wi7sh7uut4r" path="res://assets/images/dark_floor.png" id="3_a5fmo"]
+[ext_resource type="Texture2D" uid="uid://cq8tbs16w17bp" path="res://assets/images/red.png" id="4_b16b1"]
+[ext_resource type="Texture2D" uid="uid://bvtc3vanrrxvo" path="res://assets/images/black.png" id="5_4cpm4"]
+[ext_resource type="Texture2D" uid="uid://b0x7g4g8lienb" path="res://assets/images/white.png" id="6_8i05s"]
+
+[node name="MainMenu" type="Control" unique_id=31990753]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4582y")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1362389465]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4582y")
+
+[node name="PlayButton" type="TextureButton" parent="." unique_id=2024727012]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 500.0
+offset_right = 508.0
+offset_bottom = 508.0
+texture_normal = ExtResource("3_a5fmo")
+texture_pressed = ExtResource("4_b16b1")
+texture_hover = ExtResource("5_4cpm4")
+
+[node name="Lock" type="TextureRect" parent="PlayButton" unique_id=465688877]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_a5fmo")
+
+[node name="SettingsButton" type="TextureButton" parent="." unique_id=244122183]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 500.0
+offset_right = 508.0
+offset_bottom = 508.0
+texture_normal = ExtResource("5_4cpm4")
+texture_pressed = ExtResource("4_b16b1")
+texture_hover = ExtResource("6_8i05s")
+
+[node name="Label" type="Label" parent="SettingsButton" unique_id=1306311358]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SETTINGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="ExitButton" type="TextureButton" parent="." unique_id=291282731]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 500.0
+offset_right = 508.0
+offset_bottom = 508.0
+texture_normal = ExtResource("5_4cpm4")
+texture_pressed = ExtResource("4_b16b1")
+texture_hover = ExtResource("6_8i05s")
+
+[node name="Label" type="Label" parent="ExitButton" unique_id=678801661]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "EXIT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleLabel" type="Control" parent="." unique_id=220126933]
+anchors_preset = 0

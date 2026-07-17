@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d2portxc6ra8p"]
+
+[ext_resource type="Script" uid="uid://16l8u8112uay" path="res://scripts/locations/technical/Settings.gd" id="1_6khbm"]
+
+[node name="Settings" type="Control" unique_id=1255311523]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6khbm")
